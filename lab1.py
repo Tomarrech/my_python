@@ -8,7 +8,6 @@ numberList = inLst.split(',')
 i = 1
 print '# \tID \tNumber'
 for val in numberList:
-    val = eval(val)
-    print i,')\t', str(val)[0:3] ,'\t',str(val)[3:] ,'\t'
+    print i,')\t', val[0:3] ,'\t',val[3:]
     i+=1
 raw_input()
